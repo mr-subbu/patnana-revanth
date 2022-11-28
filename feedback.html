@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>feedback form</title>
+    <style>
+body {
+  background-image: url('bg1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+
+
+</style>
+
+  </head>
+  
+  <body>
+  
+    <h1>Feedback Form</h1>
+    <form action="https://formsubmit.co/revanth.patnana5828@gmail.com" method="POST">
+      First Name : <input type="text" name="firstname" placeholder="Enter Surname Here">
+      Second Name : <input type="text" name="secondname"  placeholder="Enter Name Here">
+      <br>
+      <br>
+      <!--it's important that both of these radio button have the same name so they behave as one component (i.e. only one can be selected at a time)-->  
+      <input type="radio" name="gender" value="male">Male<br>
+      <input type="radio" name="gender" value="female">Female  
+      <br>
+      <br>
+            <!--this uses the new html "email" input type which will automatically validates the email address when the submit button is clicked-->
+      Email: <input type="email" name="mail" placeholder="E-mail Address">
+      <br>
+      <br>
+        Comment :<br>        
+        <textarea rows="15" cols="100" name="commentfield"></textarea>
+        <br>
+        
+        <br>
+        <br>
+        <input type="submit" value="Send Feedback">
+        <input type="reset" value="Reset">
+    </form>
+    
+  </body>  
+</html>
